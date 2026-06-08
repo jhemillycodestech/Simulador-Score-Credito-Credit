@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Score Simulator</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 style="text-align: center; color: #02122f">Simulador Score</h1>
+
+        <form id="formScore">
+            <div class="campo-grupo">
+                <label for="campoNome">Digite seu Nome:</label>
+                <input type="text" id="campoNome" required />
+            </div>
+
+            <div class="campo-grupo">
+                <label for="campoSalario">Qual seu Salário Mensal?</label>
+                <input type="text" id="campoSalario" required="" value="" inputmode="numeric" placeholder="ex:3.000" />
+
+
+                <div class="campo-radio">
+                    <p style="margin: 0; font-weight: bold">
+                        Você paga as contas em dia?
+                    </p>
+                    <div class="opcoes-radio">
+                        <label for="checkb1"><input type="radio" name="contasEmDia" value="sim" required id="checkb1"/>
+                            Sim</label>
+                        <label for="checkb2"><input type="radio" name="contasEmDia" value="nao" id="checkb2"/> Não</label>
+                    </div>
+                </div>
+
+                <div class="campo-radio">
+                    <p style="margin: 0; font-weight: bold">
+                        Atualmente seu nome está limpo?
+                    </p>
+                    <div class="opcoes-radio">
+                        <label for="checkb3"><input type="radio" name="nomeLimpo" value="sim" required id="checkb3"/>
+                            Sim</label>
+                        <label for="checkb4"><input type="radio" name="nomeLimpo" value="nao" id="checkb4"/> Não</label>
+                    </div>
+                </div>
+
+                <button type="submit" onclick="move()">Calcular Meu Score</button>
+        </form>
+
+        </div>
+        <div id="blocoResultado" class="bloco-resultado" style="display: none">
+            <h2>Resultado da Simulação:</h2>
+
+            <div id="progressContainer">
+                <div id="progressBar" style="width: 20%;"></div>
+
+            </div>
+
+            <p style="font-size: 18px">
+                Score:
+                <strong id="textoScore" style="color: #0667c1; font-size: 24px">0</strong>
+            </p>
+            <p style="font-size: 18px">
+                Classificação: <strong id="textoClassificacao">---</strong>
+            </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
