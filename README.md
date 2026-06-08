@@ -18,6 +18,6 @@ A aplicaçõ não registra nenhum dado sensível, é uma simulação simples.
    dotnet run
 4.
    ![tela inicial](images/simulador.png)
-   ![resultado após operação](images/simuladorresults.png)
+   ![resultado após operação](images/simuladoresults.png)
 
 
