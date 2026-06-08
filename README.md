@@ -16,8 +16,9 @@ A aplicaçõ não registra nenhum dado sensível, é uma simulação simples.
 3. No terminal, execute o comando:
    ```bash
    dotnet run
-4.
+4.Tela Inicial!
    ![tela inicial](images/simulador.png)
+5.Resultado!
    ![resultado após operação](images/simuladoresults.png)
 
 
